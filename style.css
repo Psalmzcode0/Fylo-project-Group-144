@@ -13,6 +13,7 @@ body {
   font size:14px;
   text-align: center;
   color:hsl(0,0%,100%);
+  font-family: open Sans;
   
 }
 
@@ -113,6 +114,8 @@ body {
     display: flex;
     flex-wrap: wrap;
     font-size: 14px;
+    padding: 10em;
+    background-color: inherit
 }
 .fylo {
     flex-wrap: nowrap;
@@ -135,15 +138,16 @@ body {
     width: 100px;
     
 }
-span.img-text {
-    position: relative;
-    text-align:center;
-    align-items:center;
-    justify-content:content;
-    
-    
+.img-text {
+    padding: 1em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center
 }
 
+.img-text span{
+    font-weight: bold;
+}
 
 
 @media screen and (max-width: 768px) {
@@ -160,12 +164,26 @@ span.img-text {
 
 
 
+.card{
 
-
+}
 
 .newsletter{
-  background-color: hsl(218, 28%, 13%); }
+ margin-top: 0.5em;
+ background-color:hsl(219,30%, 18%);
+ padding: .4em;
+ position: absolute;
+ top: -6em;
+ left: 25%;
+ width: 50%;
+
+}
+
+.newsletter-cont{
+     position: relative
   
+}
+
 button {
   cursor: pointer;}
 
@@ -177,7 +195,10 @@ button {
 #mail {
   border-radius: 40px;
    height: 40px; 
-   width: 40%;}
+   display: inline-block;
+   width: 60%;
+
+}
 
 h4 {
   color: hsl(0, 0%, 100%);
@@ -213,4 +234,36 @@ a:hover {color:blue; }
 .icon{
     position:relative;
 
+}
+
+.img-cont{
+    text-align: center;
+    display: flex
+}
+
+.company-logo{
+    width: 100%;
+}
+
+.end{
+    display: flex;
+    flex-direction: column
+}
+
+.end a {
+    text-decoration: none;
+}
+
+footer{
+    background-color: hsl(216, 53%, 9% );
+    padding: 6em;
+}
+
+footer * + *{
+    margin-top: .5em
+}
+
+.footer-items{
+    display: flex;
+    justify-content: space-between;
 }
